@@ -5,7 +5,7 @@
 # Date: March 13, 2023
 
 # Coder's Name: Yifei Zhao                                                                                                            
-# Version: 002                                                                                        
+# Version: 002                                                                                
 ###############################################################################
 """
 This program creates a map. 

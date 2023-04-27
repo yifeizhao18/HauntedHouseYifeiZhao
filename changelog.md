@@ -17,7 +17,7 @@ fixed - movement() so player can not walk off "map"
 created - a new replit for branches
 
 v2.0
-Name: RPG: Haunted Mansion
+Name: RPG: Haunted Mansion - Inventory
 update - games name
 fixed - changelog name
 add - a dictionary to hold map-tile information (add description strings)

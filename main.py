@@ -4,8 +4,8 @@
 # Class: Computer Science 30 P1 S2                                                                                                                   
 # Date: March 13, 2023
 
-# Coder's Name: Yifei Zhao                                                                                                            
-# Version: 001                                                                                        
+# Coder's Name: Yifei Zhao                                                                                         
+# Version: 001                                                                                
 ###############################################################################
 """
 This program creates a map. 

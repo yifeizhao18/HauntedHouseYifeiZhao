@@ -60,56 +60,60 @@ def movements():
   with open ("tile.txt","w") as file2:
     file2.write(f"This is the map: \n{sentence} ")
   while True:
-    # asks for user input 
     movementChoice = (input(message.askDirection))
     print('\n')
     print(message.answer)
     print('\n')
     # if the user put in North, do the following 
-    if movementChoice == "north":
-      # makes sure the user stays in the map
-      if row == 0:
-        print("You have ran into a wall. ")
-        print('\n')
-        print("Please type in another direction. ")
-        print('\n')
-      else:
-        row -= 1
-        break
-    # if the user put in South, do the following
-    elif movementChoice == "south":
-      # makes sure the user stays in the map
-      if row == 4:
-        print("You have ran into a wall. ")
-        print('\n')
-        print("Please type in another direction. ")
-        print('\n')
-      else:
-        row += 1
-        break
-    # if the user put in West, do the following
-    elif movementChoice == "west":
-      # makes sure the user stays in the map
-      if col == 0:
-        print("You have ran into a wall. ")
-        print('\n')
-        print("Please type in another direction. ")
-        print('\n')
-      else:
-        col -= 1
-        break
-    # if the user put in East, do the following
-    elif movementChoice == "east": 
-      # makes sure the user stays in the map
-      if col == 3:
-        print("You have ran into a wall. ")
-        print('\n')
-        print("Please type in another direction. ")
-        print('\n')
-      else: 
-        col += 1
-        break
-    # if the user chose none of the above, do the following
-    else:
+    try:
+      if movementChoice == "north":
+        # makes sure the user stays in the map
+        if row == 0:
+          print("You have ran into a wall. ")
+          print('\n')
+          print("Please type in another direction. ")
+          print('\n')
+        else:
+          row -= 1
+          break
+      # if the user put in South, do the following
+      elif movementChoice == "south":
+        # makes sure the user stays in the map
+        if row == 4:
+          print("You have ran into a wall. ")
+          print('\n')
+          print("Please type in another direction. ")
+          print('\n')
+        else:
+          row += 1
+          break
+      # if the user put in West, do the following
+      elif movementChoice == "west":
+        # makes sure the user stays in the map
+        if col == 0:
+          print("You have ran into a wall. ")
+          print('\n')
+          print("Please type in another direction. ")
+          print('\n')
+        else:
+          col -= 1
+          break
+      # if the user put in East, do the following
+      elif movementChoice == "east": 
+        # makes sure the user stays in the map
+        if col == 3:
+          print("You have ran into a wall. ")
+          print('\n')
+          print("Please type in another direction. ")
+          print('\n')
+        else: 
+          col += 1
+          break
+      # if the user chose none of the above, do the following
+    except ValueError:
       print(message.wrongMessage)
       print('\n')
+    else:
+      break
+    finally:
+      print(message.answer)

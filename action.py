@@ -32,6 +32,7 @@ def mainChoice(Inventory, Food, Medicine):
   # prints the options for action
   while True:
     print("Possible actions: ")
+    # printing the possible options for the user
     for key in actionChoice:
       print(f"- {key}")
     actionChoice2 = (input(message.actionMessage))

@@ -51,12 +51,14 @@ def movements():
   makes sure the user does not walk off of the map.
   """
   global row, col
+  # reading the maptile text file and printing it on the console
   with open("maptile.txt", "r") as file:
     sentence = file.read()
     print(sentence)
     print('\n')
+  # printing the maptile to the external file called the tile.txt
   with open ("tile.txt","w") as file2:
-    file2.write(f"This is the map: '\n' {sentence}. ")
+    file2.write(f"This is the map: \n{sentence} ")
   while True:
     # asks for user input 
     movementChoice = (input(message.askDirection))

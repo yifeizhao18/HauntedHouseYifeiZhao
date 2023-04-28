@@ -38,3 +38,7 @@ add - randomResults file - a file for randomizing results
 add - map file - a file for all of the map tiles and the direction function
 add - maptile text file - a file for the map
 add - tile.txt - the map will be printed to this external file
+
+v4.0
+Name: RPG: Haunted Mansion - Exception Handling
+add - a try/except/else/finally sentence

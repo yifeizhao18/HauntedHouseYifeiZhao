@@ -1,0 +1,10 @@
+# messages to be printed on the console 
+askDirection = ("Do you want to go south, north, east, or west now? ")
+answer = ("Sounds good! ")
+actionMessage = ("What movement would you like to do? ")
+wrongMessage = ("Sorry, you cannot move in that direction. Please choose another direction. No capital letters! ")
+wrongSpelling = ("Please only answer yes or no. No capital letters. ")
+endingMessage = ("Thank you for playing. Bye! ")
+leaveMessage = ("Do you want to leave now? ")
+congratsMessage = ("Congratulations! ")
+collectMessage = ("Do you want to collect it? ")

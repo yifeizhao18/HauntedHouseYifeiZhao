@@ -62,8 +62,6 @@ def movements():
   while True:
     movementChoice = (input(message.askDirection))
     print('\n')
-    print(message.answer)
-    print('\n')
     # if the user put in North, do the following 
     try:
       if movementChoice == "north":
@@ -109,11 +107,16 @@ def movements():
         else: 
           col += 1
           break
+      else:
+        print(message.wrongMessage)
+        print('\n')
       # if the user chose none of the above, do the following
-    except ValueError:
-      print(message.wrongMessage)
+    except:
+      print("Movement Exception")
       print('\n')
     else:
       break
     finally:
       print(message.answer)
+      print('\n')
+      

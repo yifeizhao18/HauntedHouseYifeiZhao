@@ -28,7 +28,7 @@ while True:
   current_location = map.HauntedMansion[map.row][map.col]
   # if the user is at the Entrance, do the following
   if current_location == "Entrance":
-    print(map.roomsHauntedMansion["Entrance"]["description"])
+    print(map.Entrance.description)
     print('\n')
   # if the user is at the grand ball room, do the following
   elif current_location == "Grand Ball Room":

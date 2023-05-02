@@ -107,15 +107,18 @@ def movements():
         else: 
           col += 1
           break
+      # if the user chose none of the above, do the following
       else:
         print(message.wrongMessage)
         print('\n')
-      # if the user chose none of the above, do the following
+    # do this if there is an exception in the code
     except:
       print("Movement Exception")
       print('\n')
+    # else break out of the while loop
     else:
       break
+    # do this no matter what
     finally:
       print(message.answer)
       print('\n')

@@ -52,13 +52,18 @@ def movements():
   """
   global row, col
   # reading the maptile text file and printing it on the console
-  with open("maptile.txt", "r") as file:
-    sentence = file.read()
-    print(sentence)
-    print('\n')
-  # printing the maptile to the external file called the tile.txt
-  with open ("tile.txt","w") as file2:
-    file2.write(f"This is the map: \n{sentence} ")
+  try:
+    with open("maptile.txt", "r") as file:
+      sentence = file.read()
+      print(sentence)
+      print('\n')
+    # printing the maptile to the external file called the tile.txt
+    with open ("tile.txt","w") as file2:
+      file2.write(f"This is the map: \n{sentence} ")
+  except:
+    print("File Exception")
+  else:
+    pass
   while True:
     movementChoice = (input(message.askDirection))
     print('\n')

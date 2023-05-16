@@ -42,3 +42,6 @@ add - tile.txt - the map will be printed to this external file
 v4.0
 Name: RPG: Haunted Mansion - Exception Handling
 add - a try/except/else/finally sentence
+
+v5.0
+Name: RPG: Haunted Mansion - Classes

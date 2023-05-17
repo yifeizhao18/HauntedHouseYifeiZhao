@@ -1,4 +1,3 @@
-import sys
 
 class Action:
   "a class for all of the actions"

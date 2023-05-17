@@ -27,6 +27,7 @@ from action import *
 from randomResult import *
 
 User = Player(2, 2)
+Inventory = Objects()
 
 # map for the HauntedMansion 
 HauntedMansion = [
@@ -54,10 +55,6 @@ Search = Action("Searching For Possible Keys! ", "You will be able to search the
 Quit = Action("Thank you for playing. Bye! ", "The game will stop. ")
 Inv = Action("These are your current inventories. ", "If you do not see anything in it, that is because you have not found or collected anything yet. ")
 
-
-Inventory = Objects()
-
-#choice = ActionChoice()
 
 def mainChoice():
   """
@@ -150,5 +147,4 @@ while Playing:
     print('\n')
   # Main Menu
   mainChoice()
-  #action.mainChoice(Inventory, randomResult.Food, randomResult.Medicine)
   User.movements()

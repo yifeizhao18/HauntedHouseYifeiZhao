@@ -18,16 +18,12 @@ Has empty lists that the user will be able to add items into it.
 # Global Variables & Imports
 row = 2
 col = 2
-
 import sys
 import message
 from map import *
 from player import *
 from action import *
 from randomResult import *
-
-User = Player(2, 2)
-Inventory = Objects()
 
 # map for the HauntedMansion 
 HauntedMansion = [
@@ -47,14 +43,18 @@ MasterBedroom = Rooms("You are currently in the Master Bedroom. This is where th
 Bathroom = Rooms("You are currently in the Bathroom. The room of slaughter. Be careful NOT to be the next one... ", "randomized")
 Exit = Tile("You are currently at the exit. ", "randomized", "You have successfully found the exit. Goodbye! ")
 
-# create a list of the choices the player can do
-actionChoice = ["walk", "search", "quit", "inventory"]
-
 # Create action objects
 Walk = Action("Currently Walking Around! ", "You will be able to walk around the room. ")
 Search = Action("Searching For Possible Keys! ", "You will be able to search the room. ")
 Quit = Action("Thank you for playing. Bye! ", "The game will stop. ")
 Inv = Action("These are your current inventories. ", "If you do not see anything in it, that is because you have not found or collected anything yet. ")
+
+# created objects for classes
+User = Player(2, 2)
+Inventory = Objects()
+
+# create a list of the choices the player can do
+actionChoice = ["walk", "search", "quit", "inventory"]
 
 
 def mainChoice():

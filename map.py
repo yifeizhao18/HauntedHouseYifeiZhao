@@ -1,6 +1,3 @@
-# Global Variables and Imports
-import message
-
 class Rooms:
   """
   created a class for the Rooms for the tiles in the map

@@ -1,7 +1,7 @@
 ###############################################################################
 # Title: Data Structures: RPG - Modules
 
-# Class: Computer Science 30 P1 S2                                                                                                                   
+# Class: Computer Science 30 P1 S2                                                                                                         
 # Date: March 13, 2023
 
 # Coder's Name: Yifei Zhao                                                                                                            

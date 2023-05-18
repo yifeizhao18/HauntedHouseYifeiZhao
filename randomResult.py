@@ -2,6 +2,7 @@
 import random
 import message
 
+# each result variable represents a result that will be printed on the console
 result1 = "Sorry! There is nothing here. "
 result2 = "You found some energy drink. "
 result3 = "You found a treasure chest with bandages. "
@@ -13,8 +14,13 @@ result7 = "You found a treasure chest with a sword in it. "
 
 
 class Objects:
-  "created a class for the inventory, food, medicine"
+  """
+  created a class for the inventory, food, medicine
+  """
   def __init__ (object):
+    """
+    creates empty inventories for the inventory, food, medicine
+    """
     object.inventory = []
     object.food = []
     object.medicine = []

@@ -45,3 +45,16 @@ add - a try/except/else/finally sentence
 
 v5.0
 Name: RPG: Haunted Mansion - Classes
+add - class for room
+add - childclass for the tiles under the room class
+add - class for action
+add - player file
+add - player class
+move - movement function inside the player class
+add - object class
+change - possibleResults dictionary into variables that the class can access
+move - moved the randomResult function inside the class
+add - room objects and action objects
+move - moved the main choice function in the main
+
+

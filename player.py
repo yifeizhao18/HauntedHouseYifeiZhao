@@ -1,6 +1,10 @@
+# Global imports and variables 
 import message
 
 class Player:
+  """
+  creates a player class and gives a location
+  """
   def __init__ (self, row, col):
     self.row = row
     self.col = col

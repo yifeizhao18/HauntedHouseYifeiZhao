@@ -47,6 +47,7 @@ MasterBedroom = Rooms("You are currently in the Master Bedroom. This is where th
 Bathroom = Rooms("You are currently in the Bathroom. The room of slaughter. Be careful NOT to be the next one... ", "randomized")
 Exit = Tile("You are currently at the exit. ", "randomized", "You have successfully found the exit. Goodbye! ")
 
+# create a list of the choices the player can do
 actionChoice = ["walk", "search", "quit", "inventory"]
 
 # Create action objects
@@ -110,6 +111,7 @@ def mainChoice():
 
 # Main
 Playing = True
+# run as long as the player is playing
 while Playing: 
   current_location = HauntedMansion[User.row][User.col]
   # if the user is at the Entrance, do the following

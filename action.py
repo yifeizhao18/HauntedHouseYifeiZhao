@@ -3,6 +3,9 @@ class Action:
   a class for all of the actions
   """
   def __init__ (action, message, description):
+    """
+    the messages and the descriptions
+    """
     action.message = message
     action.description = description 
     

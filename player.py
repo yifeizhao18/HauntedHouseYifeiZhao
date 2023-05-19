@@ -7,7 +7,7 @@ class Player:
   """
   def __init__ (self, row, col):
     """
-    added the row and the column 
+    the row and the column 
     """
     self.row = row
     self.col = col

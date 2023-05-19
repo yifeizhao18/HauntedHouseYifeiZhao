@@ -19,7 +19,7 @@ class Objects:
   """
   def __init__ (object):
     """
-    creates empty inventories for the inventory, food, medicine
+    empty inventories for the inventory, food, medicine
     """
     object.inventory = []
     object.food = []
